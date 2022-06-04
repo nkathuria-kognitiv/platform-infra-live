@@ -24,4 +24,5 @@ inputs = {
   rsg_name = "ccp-non-prod-rg"
   apim_name = "qa-kognitiv-apim-gateway"
   apim_sku = "Developer_1"
+  named_values = {"storageaccountname" = "apigateway1", "containername" = "client-programs", "keyvaultname" = "ccp-non-prod-kv"}
 }
