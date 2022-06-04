@@ -1,0 +1,11 @@
+# These variables apply to all the terragrunt commands at the resource group level. They are automatically pulled in using yamldecode and merged into
+# the inputs of the root terragrunt.hcl file.
+# Note that this file cannot be completely empty because terragrunt's yamldecode function expects an
+# object, and it doesn't treat empty files as an empty object (you get a syntax error).
+#
+resource_group_name: "ccp-non-prod-rg"
+location: "eastus"
+
+resource_group_common_tags: {
+  resource_group_name: "ccp-non-prod-rg"
+}

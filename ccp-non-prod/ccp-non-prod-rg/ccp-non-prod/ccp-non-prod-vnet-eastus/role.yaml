@@ -1,0 +1,8 @@
+# These variables apply to all the terragrunt commands at the service level. They are automatically pulled in using yamldecode and merged into
+# the inputs of the root terragrunt.hcl file.
+# Note that this file cannot be completely empty because terragrunt's yamldecode function expects an
+# object, and it doesn't treat empty files as an empty object (you get a syntax error).
+#
+role_name: "zonal-virtual-network"
+
+role_common_tags: { role_name: "zonal-virtual-network" }
