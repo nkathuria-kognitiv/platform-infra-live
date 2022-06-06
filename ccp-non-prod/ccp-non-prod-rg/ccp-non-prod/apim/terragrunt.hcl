@@ -27,5 +27,6 @@ inputs = {
   storageaccountname = "apigateway1"
   containername = "client-programs"
   keyvaultname = "ccp-shared-services-kv"
+  api_key_name = "ln-uat-x-api-key"
 
 }
