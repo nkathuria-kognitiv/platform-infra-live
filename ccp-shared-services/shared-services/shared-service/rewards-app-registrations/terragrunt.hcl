@@ -1,7 +1,7 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  source = "../../../../..//platform-infra-modules/terraform/modules/azure/apim" #fix this path as necessary
+  source = "../../../../..//platform-infra-modules/terraform/modules/azure/app_registrations/apim_app_registration" #fix this path as necessary
 
   extra_arguments "custom_vars" {
     commands = [
@@ -21,11 +21,6 @@ include {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
-  rsg_name = "ccp-non-prod-rg"
-  apim_name = "qa-kognitiv-apim-gateway"
-  apim_sku = "Developer_1"
-  storageaccountname = "apigateway1"
-  containername = "client-programs"
-  keyvaultname = "ccp-shared-services-kv"
-
+  apim_app_display_name="APIM-Dev"
+  pmp_app_display_name ="PMP-Dev"
 }
