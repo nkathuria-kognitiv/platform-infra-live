@@ -92,8 +92,8 @@ remote_state {
   disable_dependency_optimization = true
   config = {
       key = "${path_relative_to_include()}/terraform.tfstate"
-      resource_group_name  = "shared-sevices"
-      storage_account_name = "devccpterraformbackend" #TBD
+      resource_group_name  = "ccp-non-pro-rg"
+      storage_account_name = "ccpterraformbackend" #TBD
       container_name       = "live-terragrunt-state" #TBD
     }
 }
