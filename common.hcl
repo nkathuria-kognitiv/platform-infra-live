@@ -92,7 +92,7 @@ remote_state {
   disable_dependency_optimization = true
   config = {
       key = "${path_relative_to_include()}/terraform.tfstate"
-      resource_group_name  = "shared-sevices"
+      resource_group_name  = "shared-services"
       storage_account_name = "devccpterraformbackend" #TBD
       container_name       = "live-terragrunt-state" #TBD
     }
