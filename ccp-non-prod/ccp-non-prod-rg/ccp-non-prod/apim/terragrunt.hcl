@@ -24,9 +24,10 @@ inputs = {
   rsg_name = "ccp-non-prod-rg"
   apim_name = "qa-kognitiv-apim-gateway"
   apim_sku = "Developer_1"
-  storageaccountname = "apigateway1"
+  storageaccountname = "ccpterraformbackend"
   containername = "client-programs"
   keyvaultname = "ccp-non-prod-kv"
+  certificate_name = "internal-kognitiv-cert"
   api_key_name = "ln-uat-x-api-key"
-
+  custom_domain_host_name = "api-qa.internal.kognitiv.com"
 }
