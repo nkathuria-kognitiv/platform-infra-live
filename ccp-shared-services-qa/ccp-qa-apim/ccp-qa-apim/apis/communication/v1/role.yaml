@@ -3,7 +3,7 @@
 # Note that this file cannot be completely empty because terragrunt's yamldecode function expects an
 # object, and it doesn't treat empty files as an empty object (you get a syntax error).
 
-#apim_name : dev-kognitiv-apim-gateway
-role_name: "api-version-set"
 
-role_common_tags: { role_name: "api-version-set" }
+role_name: "api-v1"
+
+role_common_tags: { role_name: "api-v1" }

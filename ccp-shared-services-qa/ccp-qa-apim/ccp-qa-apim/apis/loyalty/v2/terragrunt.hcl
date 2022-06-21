@@ -1,7 +1,7 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  source = "../../../../../..//platform-infra-modules/terraform/modules/azure/api-product" #fix this path as necessary
+  source = "../../../../../../..//platform-infra-modules/terraform/modules/azure/apis/loyalty/v1" #fix this path as necessary
 
   extra_arguments "custom_vars" {
     commands = [
@@ -21,8 +21,4 @@ include {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
-  product_id = "rewards-gateway"
-  product_display_name = "Rewards Gateway"
-  product_description = "Rewards Gateway contains se of APIs that will be connected to different rewards providers"
-  published = false
 }

@@ -1,7 +1,7 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  source = "../../../../../..//platform-infra-modules/terraform/modules/azure/api-product/loyalty" #fix this path as necessary
+  source = "../../../../../../..//platform-infra-modules/terraform/modules/azure/apis/mpo/v2" #fix this path as necessary
 
   extra_arguments "custom_vars" {
     commands = [
@@ -14,6 +14,14 @@ terraform {
   }
 }
 
+dependency "product" {
+  config_path = "../../../products/mpo"
+}
+
+dependency "versionset" {
+  config_path = "../"
+  skip_outputs = true
+}
 # Includes all settings from the root terragrunt.hcl file
 include {
   path = find_in_parent_folders("common.hcl")
