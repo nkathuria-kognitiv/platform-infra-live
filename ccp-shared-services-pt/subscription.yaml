@@ -1,0 +1,16 @@
+# These variables apply to all the terragrunt commands at the subscription level. They are automatically pulled in using yamldecode and merged into
+# the inputs of the root terragrunt.hcl file.
+# Note that this file cannot be completely empty because terragrunt's yamldecode function expects an
+# object, and it doesn't treat empty files as an empty object (you get a syntax error).
+#
+
+#
+subscription_id : "4e73bbaa-402d-4a8c-9bda-96a8c574baa7"
+subscription_name: "ccp-shared-services"
+tenant_id : "5bbed656-4f0a-43a0-bef8-c91aecbe75a3"
+
+subscription_common_tags: {
+  owner: "terraform",
+  subscription_name: "ccp-shared-services"
+}
+

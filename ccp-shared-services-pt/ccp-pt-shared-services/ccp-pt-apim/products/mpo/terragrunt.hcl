@@ -1,7 +1,7 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  source = "../../../../..//platform-infra-modules/terraform/modules/azure/app_registrations/apim_app_registration" #fix this path as necessary
+  source = "../../../../../..//platform-infra-modules/terraform/modules/azure/api-product/mpo" #fix this path as necessary
 
   extra_arguments "custom_vars" {
     commands = [
