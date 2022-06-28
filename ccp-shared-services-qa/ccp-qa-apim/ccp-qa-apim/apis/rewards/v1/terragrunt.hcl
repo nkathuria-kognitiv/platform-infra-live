@@ -30,4 +30,7 @@ include {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
+  post_click_schema_id = "1655914818263"
+  post_click_type_name = "postMemberClickRequest"
+
 }

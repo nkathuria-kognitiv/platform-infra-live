@@ -29,4 +29,6 @@ include {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
+  post_deposit_schema_id = "1655819936464"
+  post_deposit_type_name = "deposit"
 }

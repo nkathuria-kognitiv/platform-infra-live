@@ -30,4 +30,6 @@ include {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
+  post_email_schema_id = "1656011310869" #This is created manually from the portal. this is done so that changes done manually are not lost.
+  post_email_type_name = "postCommunication"
 }
